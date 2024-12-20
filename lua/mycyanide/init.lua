@@ -36,7 +36,7 @@ local set_groups = function()
     EndOfBuffer = { fg = c.gray02 }, -- ~ lines at the end of a buffer
     NormalFloat = { fg = c.fg, bg = c.statusbarBg }, -- normal text and background color for floating windows
     FloatBorder = { fg = c.blue, bg = c.statusbarBg },
-    ColorColumn = { fg = c.none, bg = c.gray01 }, --  used for the columns set with 'colorcolumn'
+    ColorColumn = { fg = c.none, bg = c.yellow }, --  used for the columns set with 'colorcolumn'
     Conceal = { fg = c.gray05 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor = { fg = c.cyan, bg = c.none, reverse = true }, -- the character under the cursor
     CursorIM = { fg = c.cyan, bg = c.none, reverse = true }, -- like Cursor, but used when in IME mode
@@ -94,51 +94,50 @@ local set_groups = function()
     healthSuccess = { fg = c.green },
     healthWarning = { fg = c.yellow },
    --common
-    Type = { fg = c.magenta }, -- int, long, char, etc.
+    Type         = { fg = c.cyan }, -- int, long, char, etc.
     StorageClass = { fg = c.cyan }, -- static, register, volatile, etc.
-    Structure = { fg = c.fg }, -- struct, union, enum, etc.
-    Constant = { fg = c.cyan }, -- any constant
-    Comment = { fg = c.gray02, bg = c.none, bold = cfg.comment_style.bold, italic = cfg.comment_style.italic }, -- italic comments
-    Conditional = { fg = c.yellow, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic if, then, else, endif, switch, etc.
-    Keyword = { fg = c.yellow, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic for, do, while, etc.
-    Repeat = { fg = c.blue, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic any other keyword
-    Boolean = { fg = c.yellow, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic }, -- true , false
-    Function = { fg = c.blue, bg = c.none, bold = cfg.function_style.bold, italic = cfg.function_style.italic },
-    Identifier = { fg = c.white, bg = c.none }, -- any variable name
-    String = { fg = c.green, bg = c.none }, -- Any string
-    Character = { fg = c.green }, -- any character constant: 'c', '\n'
-    Number = { fg = c.orange }, -- a number constant: 5
-    Float = { fg = c.orange }, -- a floating point constant: 2.3e10
-    Statement = { fg = c.blue }, -- any statement
-    Label = { fg = c.cyan }, -- case, default, etc.
-    Operator = { fg = c.yellow }, -- sizeof", "+", "*", etc.
-    Exception = { fg = c.yellow }, -- try, catch, throw
-    PreProc = { fg = c.red }, -- generic Preprocessor
-    Include = { fg = c.yellow }, -- preprocessor #include
-    Define = { fg = c.yellow }, -- preprocessor #define
-    Macro = { fg = c.yellow }, -- same as Define
-    Typedef = { fg = c.magenta }, -- A typedef
-    PreCondit = { fg = c.yellow }, -- preprocessor #if, #else, #endif, etc.
-    Special = { fg = c.blue, bg = c.none, italic = true }, -- any special symbol
-    SpecialChar = { fg = c.cyan }, -- special character in a constant
-    Tag = { fg = c.yellow }, -- you can use CTRL-] on this
-    Delimiter = { fg = c.gray07 }, -- character that needs attention like , or .
+    Structure    = { fg = c.cyan }, -- struct, union, enum, etc.
+    Constant     = { fg = c.cyan }, -- any constant
+    Comment      = { fg = c.gray02, bg = c.none, bold = cfg.comment_style.bold, italic = cfg.comment_style.italic }, -- italic comments
+    Conditional  = { fg = c.cyan, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic if, then, else, endif, switch, etc.
+    Keyword      = { fg = c.cyan, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic for, do, while, etc.
+    Repeat       = { fg = c.yellow, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic any other keyword
+    Boolean      = { fg = c.cyan, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic }, -- true , false
+    Function     = { fg = c.cyan, bg = c.none, bold = cfg.function_style.bold, italic = cfg.function_style.italic },
+    Identifier   = { fg = c.fg, bg = c.none }, -- any variable name
+    String       = { fg = c.cyan, bg = c.none }, -- Any string
+    Character    = { fg = c.cyan }, -- any character constant: 'c', '\n'
+    Number       = { fg = c.cyan }, -- a number constant: 5
+    Float        = { fg = c.cyan }, -- a floating point constant: 2.3e10
+    Statement    = { fg = c.cyan }, -- any statement
+    Label        = { fg = c.cyan }, -- case, default, etc.
+    Operator     = { fg = c.none }, -- sizeof", "+", "*", etc.
+    Exception    = { fg = c.cyan }, -- try, catch, throw
+    PreProc      = { fg = c.yellow }, -- generic Preprocessor
+    Include      = { fg = c.yellow }, -- preprocessor #include
+    Define       = { fg = c.yellow }, -- preprocessor #define
+    Macro        = { fg = c.yellow }, -- same as Define
+    Typedef      = { fg = c.cyan }, -- A typedef
+    PreCondit    = { fg = c.yellow }, -- preprocessor #if, #else, #endif, etc.
+    Special      = { fg = c.yellow, bg = c.none, italic = true }, -- any special symbol
+    SpecialChar  = { fg = c.cyan }, -- special character in a constant
+    Tag          = { fg = c.yellow }, -- you can use CTRL-] on this
+    Delimiter    = { fg = c.gray07 }, -- character that needs attention like , or .
     SpecialComment = { fg = c.blue }, -- special things inside a comment
-    Debug = { fg = c.red }, -- debugging statements
-    Underlined = { fg = c.cyan, bg = c.none, underline = true }, -- text that stands out, HTML links
-    Ignore = { fg = c.gray07 }, -- left blank, hidden
-    Error = { fg = c.red, bg = c.none, bold = true, underline = true }, -- any erroneous construct
-    Todo = { fg = c.cyan, bg = c.none, bold = true, italic = true }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-    -- GitSigns
+    Debug          = { fg = c.orange }, -- debugging statements
+    Underlined     = { fg = c.cyan,   bg = c.none, underline = true }, -- text that stands out, HTML links
+    Ignore         = { fg = c.gray07 }, -- left blank, hidden
+    Error          = { fg = c.red,    bg = c.none, bold = true, underline = true }, -- any erroneous construct
+    Todo           = { fg = c.gray02, bg = c.none, bold = true, italic = true }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
-    GitSignsAdd = { fg.green, bg = c.none, bold = false, underline = false, italic = false },
-    GitSignsAddLn = { fg.green, bg = c.none, bold = false, underline = false, italic = false },     
-    GitSignsAddNr = { fg.green, bg = c.none, bold = false, underline = false, italic = false },     
+    -- GitSigns
+    GitSignsAdd      = { fg.green, bg = c.none, bold = false, underline = false, italic = false },
+    GitSignsAddLn    = { fg.green, bg = c.none, bold = false, underline = false, italic = false },     
+    GitSignsAddNr    = { fg.green, bg = c.none, bold = false, underline = false, italic = false },     
     GitSignsChange   = { fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
     GitSignsChangeLn = { fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
     GitSignsChangeNr = { fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
-
-    GitSignsDelete = { fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
+    GitSignsDelete   = { fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
     GitSignsDeleteLn = { fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
     GitSignsDeleteNr = { fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
     GitSignsUntracked        = { fg.gray02, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
