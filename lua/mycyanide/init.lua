@@ -1,7 +1,7 @@
-local variants = require("bearded.colors")
-local cfg = require("bearded.config").config
+local variants = require("mycynide.colors")
+local cfg = require("mycynide.config").config
 local c = variants[cfg.variant]
-local utils = require("bearded.utils")
+local utils = require("mycynide.utils")
 local M = {}
 
 local set_terminal_colors = function()
