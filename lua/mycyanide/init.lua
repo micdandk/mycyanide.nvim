@@ -131,17 +131,17 @@ local set_groups = function()
     Todo           = { fg = c.gray02, bg = c.none, bold = true, italic = true }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- GitSigns
-    GitSignsAdd      = { fg.green, bg = c.none, bold = false, underline = false, italic = false },
-    GitSignsAddLn    = { fg.green, bg = c.none, bold = false, underline = false, italic = false },     
-    GitSignsAddNr    = { fg.green, bg = c.none, bold = false, underline = false, italic = false },     
-    GitSignsChange   = { fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
-    GitSignsChangeLn = { fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
-    GitSignsChangeNr = { fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
-    GitSignsDelete   = { fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
-    GitSignsDeleteLn = { fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
-    GitSignsDeleteNr = { fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
-    GitSignsUntracked        = { fg.gray02, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
-    GitSignsCurrentLineBlame = { fg.gray06, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
+    GitSignsAdd      = { fg = fg.green, bg = c.none, bold = false, underline = false, italic = false },
+    GitSignsAddLn    = { fg = fg.green, bg = c.none, bold = false, underline = false, italic = false },     
+    GitSignsAddNr    = { fg = fg.green, bg = c.none, bold = false, underline = false, italic = false },     
+    GitSignsChange   = { fg = fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
+    GitSignsChangeLn = { fg = fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
+    GitSignsChangeNr = { fg = fg.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
+    GitSignsDelete   = { fg = fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
+    GitSignsDeleteLn = { fg = fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
+    GitSignsDeleteNr = { fg = fg.bright_red, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
+    GitSignsUntracked        = { fg = fg.gray02, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
+    GitSignsCurrentLineBlame = { fg = fg.gray06, bg = c.none, bold = false, underline = false, italic = false },    -- #db563a
 
     -- HTML
     htmlArg = { fg = c.fg, italic = true },
