@@ -250,7 +250,7 @@ local set_groups = function()
     TSDanger        = { fg = c.red, italic = true }, -- Text representation of a danger note.
     TSType          = { fg = c.cyan }, -- For types.
     TSTypeBuiltin   = { fg = c.cyan }, -- For builtin types.
-    TSVariable      = { fg = c.fg, bold = cfg.variable_style.bold, italic = cfg.variable_style.italic }, -- Any variable name that does not have another highlight.
+    TSVariable      = { fg = c.cyan, bold = cfg.variable_style.bold, italic = cfg.variable_style.italic }, -- Any variable name that does not have another highlight.
     TSVariableBuiltin = { fg = c.fg, bold = cfg.variable_style.bold, italic = cfg.variable_style.italic }, -- Variable names that are defined by the languages, like `this` or `self`.
     -- highlight groups for the native LSP client
     LspReferenceText = { fg = c.bg, bg = c.magenta }, -- used for highlighting "text" references
