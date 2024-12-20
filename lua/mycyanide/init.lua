@@ -1,6 +1,5 @@
-local c = require("mycyanide.colors").black
-local cfg = require("mycyanide.config").config
--- local c = variants[cfg.variant]
+local c     = require("mycyanide.colors").black
+local cfg   = require("mycyanide.config").config
 local utils = require("mycyanide.utils")
 local M = {}
 
@@ -302,9 +301,9 @@ local set_groups = function()
     diffIndexLine = { fg = c.magenta },
     -- Telescope
     TelescopeSelectionCaret = { fg = c.none, bg = c.gray02 },
-    TelescopeBorder = { fg = c.gray02 },
+    TelescopeBorder = { fg = c.cyan },
     TelescopePromptBorder = { fg = c.blue },
-    TelescopeResultsBorder = { fg = c.gray02 },
+    TelescopeResultsBorder = { fg = c.blue }, -- orig gray02
     TelescopePreviewBorder = { fg = c.gray02 },
     TelescopeMatching = { fg = c.yellow },
     TelescopePromptPrefix = { fg = c.blue },
