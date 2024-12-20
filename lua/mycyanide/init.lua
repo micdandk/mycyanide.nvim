@@ -190,68 +190,68 @@ local set_groups = function()
     DashboardCenter = { fg = c.blue },
     DashboardFooter = { fg = c.green, italic = true },
     -- TreeSitter highlight groups
-    TSAnnotation = { fg = c.blue }, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
+    TSAnnotation = { fg = c.yellow }, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
     TSAttribute = { fg = c.fg }, -- (unstable) TODO: docs
     TSBoolean = { fg = c.cyan, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic }, -- true or false
-    TSCharacter = { fg = c.green }, -- For characters.
+    TSCharacter = { fg = c.bright_green }, -- For characters.
     TSComment = { fg = c.gray02, bg = c.none, bold = cfg.comment_style.bold, italic = cfg.comment_style.italic }, -- For comment blocks.
-    TSConditional = { fg = c.yellow, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For keywords related to conditionnals.
-    TSConstant = { fg = c.fg }, -- For constants
-    TSConstBuiltin = { fg = c.red, italic = true }, -- For constants that are built in the language: `nil` in Lua.
-    TSConstMacro = { fg = c.red }, -- For constants that are defined by macros: `NULL` in C.
-    TSConstructor = { fg = c.gray07 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    TSConditional = { fg = c.cyan, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For keywords related to conditionnals.
+    TSConstant = { fg = c.cyan }, -- For constants
+    TSConstBuiltin = { fg = c.cyan, italic = true }, -- For constants that are built in the language: `nil` in Lua.
+    TSConstMacro = { fg = c.cyan }, -- For constants that are defined by macros: `NULL` in C.
+    TSConstructor = { fg = c.cyan }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     TSError = { fg = c.red }, -- For syntax/parser errors.
-    TSException = { fg = c.yellow }, -- For exception related keywords.
+    TSException = { fg = c.cyan }, -- For exception related keywords.
     TSField = { fg = c.cyan }, -- For fields.
-    TSFloat = { fg = c.orange }, -- For floats.
-    TSFunction = { fg = c.blue, bold = cfg.function_style.bold, italic = cfg.function_style.italic }, -- For fuction (calls and definitions).
+    TSFloat = { fg = c.bright_green }, -- For floats.
+    TSFunction = { fg = c.cyan, bold = cfg.function_style.bold, italic = cfg.function_style.italic }, -- For fuction (calls and definitions).
     TSFuncBuiltin = { fg = c.fg, bold = cfg.function_style.bold, italic = cfg.function_style.italic }, -- For builtin functions: `table.insert` in Lua.
-    TSFuncMacro = { fg = c.blue }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-    TSInclude = { fg = c.yellow, italic = true }, -- For includes: `#include` C, `use` or `extern crate` in Rust, or `require` in Lua.
-    TSKeyword = { fg = c.blue, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For keywords that don't fall in previous categories.
-    TSKeywordFunction = { fg = c.magenta, bold = cfg.function_style.bold, italic = cfg.function_style.italic }, -- For keywords used to define a fuction.
+    TSFuncMacro = { fg = c.cyan }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+    TSInclude = { fg = c.cyan, italic = true }, -- For includes: `#include` C, `use` or `extern crate` in Rust, or `require` in Lua.
+    TSKeyword = { fg = c.cyan, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For keywords that don't fall in previous categories.
+    TSKeywordFunction = { fg = c.cyan, bold = cfg.function_style.bold, italic = cfg.function_style.italic }, -- For keywords used to define a fuction.
     TSKeywordOperator = { fg = c.yellow }, -- For operators that are English words, e.g. `and`, `as`, `or`.
-    TSKeywordReturn = { fg = c.blue, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For the `return` and `yield` keywords.
+    TSKeywordReturn = { fg = c.cyan, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For the `return` and `yield` keywords.
     TSLabel = { fg = c.cyan }, -- For labels: `label:` in C and `:label:` in Lua.
-    TSMethod = { fg = c.blue, bold = cfg.function_style.bold, italic = cfg.function_style.italic }, -- For method calls and definitions.
-    TSNamespace = { fg = c.blue }, -- For identifiers referring to modules and namespaces.
+    TSMethod = { fg = c.cyan, bold = cfg.function_style.bold, italic = cfg.function_style.italic }, -- For method calls and definitions.
+    TSNamespace = { fg = c.cyan }, -- For identifiers referring to modules and namespaces.
     -- TSNone = {}, -- No highlighting. Don't change the values of this highlight group.
-    TSNumber = { fg = c.orange }, -- For all numbers
-    TSOperator = { fg = c.yellow }, -- For any operator: `+`, but also `->` and `*` in C.
-    TSParameter = { fg = c.pink }, -- For parameters of a function.
-    TSParameterReference = { fg = c.orange }, -- For references to parameters of a function.
-    TSProperty = { fg = c.blue }, -- Same as `TSField`.
-    TSPunctDelimiter = { fg = c.gray05 }, -- For delimiters ie: `.`
-    TSPunctBracket = { fg = c.gray05 }, -- For brackets and parens.
-    TSPunctSpecial = { fg = c.green }, -- For special punctutation that does not fall in the catagories before.
-    TSRepeat = { fg = c.blue, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For keywords related to loops.
-    TSString = { fg = c.cyan }, -- For strings.
-    TSStringRegex = { fg = c.green }, -- For regexes.
-    TSStringEscape = { fg = c.red }, -- For escape characters within a string.
-    TSStringSpecial = { fg = c.green }, -- For strings with special meaning that don't fit into the above categories.
-    TSSymbol = { fg = c.blue }, -- For identifiers referring to symbols or atoms.
-    TSTag = { fg = c.yellow }, -- Tags like html tag names.
-    TSTagAttribute = { fg = c.fg, italic = true }, -- For html tag attributes.
-    TSTagDelimiter = { fg = c.gray05 }, -- Tag delimiter like `<` `>` `/`
-    TSText = { fg = c.fg }, -- For strings considered text in a markup language.
-    TSStrong = { fg = c.white, bold = true }, -- For text to be represented in bold.
-    TSEmphasis = { fg = c.white, bold = true, italic = true }, -- For text to be represented with emphasis.
-    TSUnderline = { fg = c.white, bg = c.none, underline = true }, -- For text to be represented with an underline.
-    TSStrike = {}, -- For strikethrough text.
-    TSTitle = { fg = c.fg, bg = c.none, bold = true }, -- Text that is part of a title.
-    TSLiteral = { fg = c.fg }, -- Literal text.
-    TSURI = { fg = c.cyan }, -- Any URL like a link or email.
-    TSMath = { fg = c.blue }, -- For LaTeX-like math environments.
+    TSNumber        = { fg = c.bright_green }, -- For all numbers
+    TSOperator      = { fg = c.yellow }, -- For any operator: `+`, but also `->` and `*` in C.
+    TSParameter     = { fg = c.cyan }, -- For parameters of a function.
+    TSParameterReference = { fg = c.cyan }, -- For references to parameters of a function.
+    TSProperty      = { fg = c.cyan }, -- Same as `TSField`.
+    TSPunctDelimiter = { fg = c.fg }, -- For delimiters ie: `.`
+    TSPunctBracket  = { fg = c.fg }, -- For brackets and parens.
+    TSPunctSpecial  = { fg = c.fg }, -- For special punctutation that does not fall in the catagories before.
+    TSRepeat        = { fg = c.cyan, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- For keywords related to loops.
+    TSString        = { fg = c.bright_green }, -- For strings.
+    TSStringRegex   = { fg = c.yellow }, -- For regexes.
+    TSStringEscape  = { fg = c.bright_green }, -- For escape characters within a string.
+    TSStringSpecial = { fg = c.bright_green }, -- For strings with special meaning that don't fit into the above categories.
+    TSSymbol        = { fg = c.cyan }, -- For identifiers referring to symbols or atoms.
+    TSTag           = { fg = c.cyan }, -- Tags like html tag names.
+    TSTagAttribute  = { fg = c.fg, italic = true }, -- For html tag attributes.
+    TSTagDelimiter  = { fg = c.gray05 }, -- Tag delimiter like `<` `>` `/`
+    TSText          = { fg = c.fg }, -- For strings considered text in a markup language.
+    TSStrong        = { fg = c.white, bold = true }, -- For text to be represented in bold.
+    TSEmphasis      = { fg = c.white, bold = true, italic = true }, -- For text to be represented with emphasis.
+    TSUnderline     = { fg = c.white, bg = c.none, underline = true }, -- For text to be represented with an underline.
+    TSStrike        = {}, -- For strikethrough text.
+    TSTitle         = { fg = c.fg, bg = c.none, bold = true }, -- Text that is part of a title.
+    TSLiteral       = { fg = c.fg }, -- Literal text.
+    TSURI           = { fg = c.cyan }, -- Any URL like a link or email.
+    TSMath          = { fg = c.cyan }, -- For LaTeX-like math environments.
     TSTextReference = { fg = c.yellow }, -- For footnotes, text references, citations.
-    TSEnvironment = { fg = c.blue }, -- For text environments of markup languages.
-    TSEnvironmentName = { fg = c.blue }, -- For the name/the string indicating the type of text environment.
-    TSNote = { fg = c.blue, italic = true }, -- Text representation of an informational note.
-    TSWarning = { fg = c.yellow, italic = true }, -- Text representation of a warning note.
-    TSDanger = { fg = c.red, italic = true }, -- Text representation of a danger note.
-    TSType = { fg = c.magenta }, -- For types.
-    TSTypeBuiltin = { fg = c.blue }, -- For builtin types.
-    TSVariable = { fg = c.fg, bold = cfg.variable_style.bold, italic = cfg.variable_style.italic }, -- Any variable name that does not have another highlight.
-    TSVariableBuiltin = { fg = c.yellow, bold = cfg.variable_style.bold, italic = cfg.variable_style.italic }, -- Variable names that are defined by the languages, like `this` or `self`.
+    TSEnvironment   = { fg = c.cyan }, -- For text environments of markup languages.
+    TSEnvironmentName = { fg = c.cyan }, -- For the name/the string indicating the type of text environment.
+    TSNote          = { fg = c.yellow, italic = true }, -- Text representation of an informational note.
+    TSWarning       = { fg = c.yellow, italic = true }, -- Text representation of a warning note.
+    TSDanger        = { fg = c.red, italic = true }, -- Text representation of a danger note.
+    TSType          = { fg = c.cyan }, -- For types.
+    TSTypeBuiltin   = { fg = c.cyan }, -- For builtin types.
+    TSVariable      = { fg = c.fg, bold = cfg.variable_style.bold, italic = cfg.variable_style.italic }, -- Any variable name that does not have another highlight.
+    TSVariableBuiltin = { fg = c.fg, bold = cfg.variable_style.bold, italic = cfg.variable_style.italic }, -- Variable names that are defined by the languages, like `this` or `self`.
     -- highlight groups for the native LSP client
     LspReferenceText = { fg = c.bg, bg = c.magenta }, -- used for highlighting "text" references
     LspReferenceRead = { fg = c.bg, bg = c.magenta }, -- used for highlighting "read" references
