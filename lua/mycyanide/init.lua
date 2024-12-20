@@ -99,12 +99,12 @@ local set_groups = function()
     Structure      = { fg = c.cyan }, -- struct, union, enum, etc.
     Constant       = { fg = c.cyan }, -- any constant
     Comment        = { fg = c.gray02, bg = c.none, bold = cfg.comment_style.bold, italic = cfg.comment_style.italic }, -- italic comments
-    Conditional    = { fg = c.cyan, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic if, then, else, endif, switch, etc.
-    Keyword        = { fg = c.cyan, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic for, do, while, etc.
+    Conditional    = { fg = c.cyan,   bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic if, then, else, endif, switch, etc.
+    Keyword        = { fg = c.cyan,   bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic for, do, while, etc.
     Repeat         = { fg = c.yellow, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic any other keyword
-    Boolean        = { fg = c.cyan, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic }, -- true , false
-    Function       = { fg = c.cyan, bg = c.none, bold = cfg.function_style.bold, italic = cfg.function_style.italic },
-    Identifier     = { fg = c.fg, bg = c.none }, -- any variable name
+    Boolean        = { fg = c.cyan,   bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic }, -- true , false
+    Function       = { fg = c.cyan,   bg = c.none, bold = cfg.function_style.bold, italic = cfg.function_style.italic },
+    Identifier     = { fg = c.cyan,   bg = c.none }, -- any variable name
     String         = { fg = c.bright_green, bg = c.none }, -- Any string
     Character      = { fg = c.bright_green }, -- any character constant: 'c', '\n'
     Number         = { fg = c.bright_green }, -- a number constant: 5
@@ -131,9 +131,9 @@ local set_groups = function()
     Todo           = { fg = c.gray02, bg = c.none, bold = true, italic = true }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- GitSigns
-    GitSignsAdd      = { fg = c.green, bg = c.none, bold = false, underline = false, italic = false },
-    GitSignsAddLn    = { fg = c.green, bg = c.none, bold = false, underline = false, italic = false },     
-    GitSignsAddNr    = { fg = c.green, bg = c.none, bold = false, underline = false, italic = false },     
+    GitSignsAdd      = { fg = c.green,         bg = c.none, bold = false, underline = false, italic = false },
+    GitSignsAddLn    = { fg = c.green,         bg = c.none, bold = false, underline = false, italic = false },     
+    GitSignsAddNr    = { fg = c.green,         bg = c.none, bold = false, underline = false, italic = false },     
     GitSignsChange   = { fg = c.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
     GitSignsChangeLn = { fg = c.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
     GitSignsChangeNr = { fg = c.bright_yellow, bg = c.none, bold = false, underline = false, italic = false },    -- #dbdb3a
@@ -220,7 +220,7 @@ local set_groups = function()
     TSOperator      = { fg = c.yellow }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter     = { fg = c.cyan }, -- For parameters of a function.
     TSParameterReference = { fg = c.cyan }, -- For references to parameters of a function.
-    TSProperty      = { fg = c.cyan }, -- Same as `TSField`.
+    TSProperty      = { fg = c.fg }, -- Same as `TSField`.
     TSPunctDelimiter = { fg = c.fg }, -- For delimiters ie: `.`
     TSPunctBracket  = { fg = c.fg }, -- For brackets and parens.
     TSPunctSpecial  = { fg = c.fg }, -- For special punctutation that does not fall in the catagories before.
