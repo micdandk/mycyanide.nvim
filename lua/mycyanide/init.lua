@@ -1,7 +1,7 @@
-local variants = require("mycynide.colors")
-local cfg = require("mycynide.config").config
+local variants = require("mycyanide.colors")
+local cfg = require("mycyanide.config").config
 local c = variants[cfg.variant]
-local utils = require("mycynide.utils")
+local utils = require("mycyanide.utils")
 local M = {}
 
 local set_terminal_colors = function()
