@@ -1,6 +1,6 @@
-local variants = require("mycyanide.colors")
+local c = require("mycyanide.colors").black
 local cfg = require("mycyanide.config").config
-local c = variants[cfg.variant]
+-- local c = variants[cfg.variant]
 local utils = require("mycyanide.utils")
 local M = {}
 
