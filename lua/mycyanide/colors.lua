@@ -13,7 +13,7 @@ M.black = {
     blue = "#28A9FF",               -- terminal.ansiBlue
     magenta = "#A95EFF",            -- terminal.ansiMagenta
     pink = "#FF478D",
-    cyan = "#000aff",               -- terminal.ansiCyan
+    cyan = "#00afff",               -- terminal.ansiCyan
     white = "#c8c8c8",              -- terminal.ansiWhite
 
     bright_black = "#5b5b5f",       -- terminal.ansiBrightBlack
