@@ -105,10 +105,10 @@ local set_groups = function()
     Boolean      = { fg = c.cyan, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic }, -- true , false
     Function     = { fg = c.cyan, bg = c.none, bold = cfg.function_style.bold, italic = cfg.function_style.italic },
     Identifier   = { fg = c.fg, bg = c.none }, -- any variable name
-    String       = { fg = c.cyan, bg = c.none }, -- Any string
-    Character    = { fg = c.cyan }, -- any character constant: 'c', '\n'
-    Number       = { fg = c.cyan }, -- a number constant: 5
-    Float        = { fg = c.cyan }, -- a floating point constant: 2.3e10
+    String       = { fg = c.bright_green, bg = c.none }, -- Any string
+    Character    = { fg = c.bright_green }, -- any character constant: 'c', '\n'
+    Number       = { fg = c.bright_green }, -- a number constant: 5
+    Float        = { fg = c.bright_green }, -- a floating point constant: 2.3e10
     Statement    = { fg = c.cyan }, -- any statement
     Label        = { fg = c.cyan }, -- case, default, etc.
     Operator     = { fg = c.none }, -- sizeof", "+", "*", etc.
