@@ -104,7 +104,7 @@ local set_groups = function()
     Repeat         = { fg = c.yellow, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic any other keyword
     Boolean        = { fg = c.cyan, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic }, -- true , false
     Function       = { fg = c.cyan, bg = c.none, bold = cfg.function_style.bold, italic = cfg.function_style.italic },
-    Identifier     = { fg = c.cyan, bg = c.none }, -- any variable name
+    Identifier     = { fg = c.fg, bg = c.none }, -- any variable name
     String         = { fg = c.bright_green, bg = c.none }, -- Any string
     Character      = { fg = c.bright_green }, -- any character constant: 'c', '\n'
     Number         = { fg = c.bright_green }, -- a number constant: 5
@@ -237,7 +237,7 @@ local set_groups = function()
     TSStrong        = { fg = c.white, bold = true }, -- For text to be represented in bold.
     TSEmphasis      = { fg = c.white, bold = true, italic = true }, -- For text to be represented with emphasis.
     TSUnderline     = { fg = c.white, bg = c.none, underline = true }, -- For text to be represented with an underline.
-    TSStrike        = {}, -- For strikethrough text.
+    TSStrike        = { }, -- For strikethrough text.
     TSTitle         = { fg = c.fg, bg = c.none, bold = true }, -- Text that is part of a title.
     TSLiteral       = { fg = c.fg }, -- Literal text.
     TSURI           = { fg = c.cyan }, -- Any URL like a link or email.

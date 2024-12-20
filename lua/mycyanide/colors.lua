@@ -18,7 +18,7 @@ M.black = {
 
     bright_black = "#5b5b5f",       -- terminal.ansiBrightBlack
     bright_red = "#fc0606",         -- terminal.ansiBrightRed
-    bright_green = "#21fe9b",       -- terminal.ansiBrightGreen
+    bright_green = "#41feab",       -- terminal.ansiBrightGreen
     bright_yellow = "#ffb838",      -- terminal.ansiBrightYellow
     bright_blue = "#28a9ff",        -- terminal.ansiBrightBlue
     bright_magenta = "#e66dff",     -- terminal.ansiBrightMagenta
