@@ -87,7 +87,7 @@ local set_groups = function()
     InsertMode    = { fg = c.insertMode, bg = c.none, reverse = true },
     VisualMode    = { fg = c.visualMode, bg = c.none, reverse = true },
     VertSplit     = { fg = c.gray02 }, -- line between two split buffers
-    WinSeperato   = { fg = c.none, bg = c.none }, -- line between two split buffers
+    WinSeperator  = { fg = c.none, bg = c.none }, -- line between two split buffers
     CommandMode   = { fg = c.gray05, bg = c.none, reverse = true },
     Warnings      = { fg = c.yellow },
     healthError   = { fg = c.red },
