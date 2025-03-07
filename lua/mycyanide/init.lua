@@ -48,7 +48,7 @@ local set_groups = function()
     Folded        = { fg = c.gray05, bg = c.none, italic = true },
     FoldColumn    = { fg = c.yellow },
     IncSearch     = { reverse = true },
-    LineNr        = { fg = c.lineNumFg },
+    LineNr        = { fg = c.lineNumFg, c.gray00  },
     CursorLineNr  = { fg = c.lineNumActiveFg },
     MatchParen    = { fg = c.yellow, bold = true },
     ModeMsg       = { fg = c.fg, bold = true }, -- "-- Insert --" text at the bottom
@@ -87,6 +87,7 @@ local set_groups = function()
     InsertMode    = { fg = c.insertMode, bg = c.none, reverse = true },
     VisualMode    = { fg = c.visualMode, bg = c.none, reverse = true },
     VertSplit     = { fg = c.gray02 }, -- line between two split buffers
+    WinSeperato   = { fg = c.none, bg = c.none }, -- line between two split buffers
     CommandMode   = { fg = c.gray05, bg = c.none, reverse = true },
     Warnings      = { fg = c.yellow },
     healthError   = { fg = c.red },
@@ -456,9 +457,9 @@ local set_groups = function()
     HydraPink = { fg = c.magenta },
     HydraHint = { fg = c.fg, bg = c.gray02 },
     -- JSON
-    jsonNumber = { fg = c.yellow },
+    jsonNumber = { fg = c.bright_green },
     jsonNull = { fg = c.black },
-    jsonString = { fg = c.green },
+    jsonString = { fg = c.bright_green },
     jsonKeyword = { fg = c.blue },
   }
 
@@ -474,7 +475,7 @@ M.colorscheme = function()
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "bearded-theme"
+  vim.g.colors_name = "mycyanide"
 
   set_terminal_colors()
   set_groups()

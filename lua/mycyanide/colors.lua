@@ -35,6 +35,8 @@ M.black = {
     indentGuideActiveBg = "#44444d", -- editorIndentGuide.activeBackground1 (rrggbbaa -> hex, see above)
     indentGuideBg = "#0f0f11",       -- editorIndentGuide.Background1 (rrggbbaa -> hex, see above) #202024
 
+    -- lineNumActiveFg = "#929293",    -- editorLineNumber.activeForeground
+    -- lineNumFg = "#373741",          -- editorLineNumber.foreground
     lineNumActiveFg = "#929293",    -- editorLineNumber.activeForeground
     lineNumFg = "#373741",          -- editorLineNumber.foreground
 
@@ -46,7 +48,7 @@ M.black = {
 
     statusbarBg = "#333333",        -- activityBar.background
     statusbarFg = "#5f5f65",        -- activityBar.foreground
-    
+    gray00 = "#181818",   
     gray01 = statusbarBg,
     gray02 = "#444444",
     -- gray03 = "#323231", -- #323231
