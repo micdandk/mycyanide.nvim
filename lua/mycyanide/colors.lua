@@ -60,7 +60,7 @@ M.black = {
 
 M.white= {
     -- Base colors
-    bg = "#eeeeee",                 -- editor.background
+    bg = "#fafafa",                 -- editor.background
     fg = "#333333",                 -- editor.foreground
 
     black = "#0f0f0f",              -- terminal.ansiBlack
@@ -77,7 +77,7 @@ M.white= {
 
     bright_black = "#5b5b5f",       -- terminal.ansiBrightBlack
     bright_red = "#fc0606",         -- terminal.ansiBrightRed
-    bright_green = "#22aa99",       -- terminal.ansiBrightGreen
+    bright_green = "#229966",       -- terminal.ansiBrightGreen
     bright_yellow = "#aa9933",      -- terminal.ansiBrightYellow
     bright_blue = "#2266cc",        -- terminal.ansiBrightBlue
     bright_magenta = "#e66dff",     -- terminal.ansiBrightMagenta
@@ -102,15 +102,15 @@ M.white= {
     visualMode = blue,
     insertMode = green,
 
-    statusbarBg = "#aaaaaa",        -- activityBar.background
-    statusbarFg = "#666666",        -- activityBar.foreground
+    statusbarBg = "#fafafa",        -- activityBar.background
+    statusbarFg = "#333333",        -- activityBar.foreground
     gray00 = "#181818",   
     gray01 = statusbarBg,
-    gray02 = "#444444",
+    gray02 = "#666666",
     -- gray03 = "#323231", -- #323231
     gray04 = "#50505a",
-    gray05 = "#555555",
-    gray06 = "#666666", -- #767675
+    gray05 = "#888888",
+    gray06 = "#999999", -- #767675
     -- gray07 = "#b6b6b5", -- #b6b6b5
 
     none = "NONE",
