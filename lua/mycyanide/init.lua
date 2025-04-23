@@ -484,8 +484,8 @@ M.colorscheme = function()
   else
     variant = colors.black
   end  
-  set_terminal_colors(colors.black)
-  set_groups(colors.black)
+  set_terminal_colors(variant)
+  set_groups(variant)
 end
 
 return M
