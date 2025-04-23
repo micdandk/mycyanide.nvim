@@ -102,7 +102,7 @@ M.white= {
     visualMode = blue,
     insertMode = green,
 
-    statusbarBg = "#fafafa",        -- activityBar.background
+    statusbarBg = "#eeeeee",        -- activityBar.background
     statusbarFg = "#333333",        -- activityBar.foreground
     gray00 = "#181818",   
     gray01 = statusbarBg,
