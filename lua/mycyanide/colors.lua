@@ -69,19 +69,19 @@ M.white= {
     green = "#44cc44",               -- terminal.ansiGreen, prev: #42dd76
     yellow = "#FFB638",             -- terminal.ansiYellow
     -- blue = "#28A9FF",               -- terminal.ansiBlue
-    blue = "#00afff",               -- terminal.ansiBlue
+    blue = "#006ccc",               -- terminal.ansiBlue
     magenta = "#A95EFF",            -- terminal.ansiMagenta
     pink = "#FF478D",
-    cyan = "#00afff",               -- terminal.ansiCyan
+    cyan = "#006ccc",               -- terminal.ansiCyan
     white = "#c8c8c8",              -- terminal.ansiWhite
 
     bright_black = "#5b5b5f",       -- terminal.ansiBrightBlack
     bright_red = "#fc0606",         -- terminal.ansiBrightRed
-    bright_green = "#41feab",       -- terminal.ansiBrightGreen
-    bright_yellow = "#ffb838",      -- terminal.ansiBrightYellow
-    bright_blue = "#28a9ff",        -- terminal.ansiBrightBlue
+    bright_green = "#22aa99",       -- terminal.ansiBrightGreen
+    bright_yellow = "#aa9933",      -- terminal.ansiBrightYellow
+    bright_blue = "#2266cc",        -- terminal.ansiBrightBlue
     bright_magenta = "#e66dff",     -- terminal.ansiBrightMagenta
-    bright_cyan = "#00cfff",        -- terminal.ansiBrightCyan
+    bright_cyan = "#00accc",        -- terminal.ansiBrightCyan
     bright_white = "#fbfbfb",       -- terminal.ansiBrightWhite
 
     -- Special colors
