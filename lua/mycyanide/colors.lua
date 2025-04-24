@@ -74,9 +74,9 @@ M.white= {
 
     black = "#0f0f0f",              -- terminal.ansiBlack
     red = "#da2c20",                -- terminal.ansiRed
-    orange = "#fcac02",         
+    orange = "#ac8c02",         
     green = "#00a152",               -- terminal.ansiGreen, prev: #42dd76
-    yellow = "#fcec02",             -- terminal.ansiYellow
+    yellow = "#ecac20",             -- terminal.ansiYellow
     blue = "#00a0e4",               -- terminal.ansiBlue
     magenta = "#a01994",            -- terminal.ansiMagenta
     pink = "#FF478D",
