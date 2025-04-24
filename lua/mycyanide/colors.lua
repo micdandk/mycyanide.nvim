@@ -58,21 +58,29 @@ M.black = {
     none = "NONE",
 }
 
+-- Kitty colors:
+-- color9 #e8bacf
+-- color10 #3a3332
+-- color11 #494542
+-- color12 #7f7c7b
+-- color13 #d624d3
+-- color14 #ccab53
+-- color15 #f7f7f7
+
 M.white= {
     -- Base colors
     bg = "#fafafa",                 -- editor.background
     fg = "#333333",                 -- editor.foreground
 
     black = "#0f0f0f",              -- terminal.ansiBlack
-    red = "#D62C2C",                -- terminal.ansiRed
-    orange = "#FF7135",         
-    green = "#44cc44",               -- terminal.ansiGreen, prev: #42dd76
-    yellow = "#FFB638",             -- terminal.ansiYellow
-    -- blue = "#28A9FF",               -- terminal.ansiBlue
-    blue = "#006ccc",               -- terminal.ansiBlue
-    magenta = "#A95EFF",            -- terminal.ansiMagenta
+    red = "#da2c20",                -- terminal.ansiRed
+    orange = "#fcac02",         
+    green = "#00a152",               -- terminal.ansiGreen, prev: #42dd76
+    yellow = "#fcec02",             -- terminal.ansiYellow
+    blue = "#00a0e4",               -- terminal.ansiBlue
+    magenta = "#a01994",            -- terminal.ansiMagenta
     pink = "#FF478D",
-    cyan = "#006ccc",               -- terminal.ansiCyan
+    cyan = "#b5e4f4",               -- terminal.ansiCyan
     white = "#c8c8c8",              -- terminal.ansiWhite
 
     bright_black = "#5b5b5f",       -- terminal.ansiBrightBlack
@@ -102,7 +110,7 @@ M.white= {
     visualMode = blue,
     insertMode = green,
 
-    statusbarBg = "#eeeeee",        -- activityBar.background
+    statusbarBg = "#fafafa",        -- activityBar.background
     statusbarFg = "#333333",        -- activityBar.foreground
     gray00 = "#181818",   
     gray01 = statusbarBg,
