@@ -80,7 +80,7 @@ M.white= {
     blue = "#00a0e4",               -- terminal.ansiBlue
     magenta = "#a01994",            -- terminal.ansiMagenta
     pink = "#FF478D",
-    cyan = "#b5e4f4",               -- terminal.ansiCyan
+    cyan = "#00a0f4",               -- terminal.ansiCyan
     white = "#c8c8c8",              -- terminal.ansiWhite
 
     bright_black = "#5b5b5f",       -- terminal.ansiBrightBlack
