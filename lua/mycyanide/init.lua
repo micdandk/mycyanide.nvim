@@ -48,8 +48,8 @@ local set_groups = function(v)
     DiffDelete    = { fg = v.red, bg = v.none, reverse = true }, -- diff mode: Deleted line
     DiffText      = { fg = v.fg, bg = v.none, reverse = true }, -- diff mode: Changed text within a changed line
     ErrorMsg      = { fg = v.red }, -- error messages
-    Folded        = { fg = v.gray05, bg = v.none, italic = true },
-    FoldColumn    = { fg = v.yellow },
+    Folded        = { fg = v.gray06, bg = v.none, italic = true },
+    FoldColumn    = { fg = v.lineNumFg, bg = v.none },
     IncSearch     = { reverse = true },
     LineNr        = { fg = v.lineNumFg },
     CursorLineNr  = { fg = v.lineNumActiveFg },
@@ -464,6 +464,16 @@ local set_groups = function(v)
     jsonNull = { fg = v.black },
     jsonString = { fg = v.bright_green },
     jsonKeyword = { fg = v.blue },
+
+-- UFO
+--hi default link UfoPreviewSbar PmenuSbar
+--hi default link UfoPreviewThumb PmenuThumb
+--hi default link UfoPreviewWinBar UfoFoldedBg
+--hi default link UfoPreviewCursorLine Visual
+--hi default link UfoFoldedEllipsis Comment
+--hi default link UfoCursorFoldedLine CursorLine
+
+
   }
 
   for group, parameters in pairs(groups) do

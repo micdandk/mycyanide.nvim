@@ -36,7 +36,7 @@ M.black = {
     indentGuideBg = "#0f0f11",       -- editorIndentGuide.Background1 (rrggbbaa -> hex, see above) #202024
 
     lineNumActiveFg = "#929293",    -- editorLineNumber.activeForeground
-    lineNumFg = "#373741",          -- editorLineNumber.foreground
+    lineNumFg = "#444444",          -- editorLineNumber.foreground
 
     whitespaceFg = "#2b2b30",       -- keyword.other.whitespace.liquid (rrggbbaa -> hex, see above)
 
