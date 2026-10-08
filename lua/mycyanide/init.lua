@@ -457,6 +457,14 @@ local set_groups = function(v)
     StatusLineInfo = { fg = v.green, bg = v.gray01 },
     StatusLineWarn = { fg = v.yellow, bg = v.gray01 },
     StatusLineError = { fg = v.red, bg = v.gray01 },
+    StatuslineTerm = { fg = v.bright_black, bg = v.bgnone },
+    User1 = { fg = v.fg, bg = v.bg },
+    User2 = { fg = v.bright_blue, bg = v.bg },
+    User3 = { fg = v.bright_green, bg = v.bg },
+    User4 = { fg = v.yellow, bg = v.bg },
+    User5 = { bg = v.none , fg = v.bg },
+
+
     -- Hydra
     HydraRed = { fg = v.red },
     HydraBlue = { fg = v.blue },
