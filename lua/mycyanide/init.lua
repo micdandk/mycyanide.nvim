@@ -1,11 +1,16 @@
 
 local colors = require("mycyanide.colors")
-
-local c     = require("mycyanide.colors").black
 local cfg   = require("mycyanide.config").config
 local utils = require("mycyanide.utils")
 local M = {}
 
+if vim.o.background == "light" then
+  local c = colors.white
+else 
+  local c = colors.black
+end
+
+-- implement light version as well
 local set_terminal_colors = function(v)
   vim.g.terminal_color_0 = v.black
   vim.g.terminal_color_1 = v.red
